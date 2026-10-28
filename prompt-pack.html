@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Tools Prompt Pack — $15 USDT</title>
-<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-<style>
-  body { font-family: system-ui, -apple-system, sans-serif; max-width: 520px; margin: 0 auto; padding: 32px 20px; text-align: center; color: #111; }
-  h1 { font-size: 24px; margin-bottom: 8px; }
-  p { color: #444; line-height: 1.5; }
-  .amount { font-size: 20px; font-weight: 700; margin: 24px 0 8px; }
-  .address { background: #f2f2f2; border-radius: 10px; padding: 14px 10px; word-break: break-all; font-family: monospace; font-size: 14px; margin: 12px 0; }
-  button, .dlbtn { background: #111; color: #fff; border: none; border-radius: 999px; padding: 12px 28px; font-size: 16px; cursor: pointer; text-decoration: none; display: inline-block; }
-  button:active, .dlbtn:active { opacity: 0.7; }
-  button:disabled { opacity: 0.4; cursor: default; }
-  .note { font-size: 14px; color: #666; margin-top: 20px; }
-  .steps { text-align: left; max-width: 420px; margin: 24px auto 0; }
-  .steps li { color: #333; margin-bottom: 10px; line-height: 1.5; }
-  a { color: #111; }
-  #ton-connect { display: flex; justify-content: center; margin: 16px 0; }
-  #status { font-size: 14px; color: #333; margin-top: 16px; min-height: 20px; }
-  #payBox, #verifyBox, #dlBox, #manualBox { display: none; }
-  .small { font-size: 13px; color: #777; }
-  hr { border: none; border-top: 1px solid #eee; margin: 28px 0; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tools Prompt Pack — $15 USDT</title>
+  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 520px; margin: 0 auto; padding: 32px 20px; text-align: center; color: #111; }
+    h1 { font-size: 24px; margin-bottom: 8px; }
+    p { color: #444; line-height: 1.5; }
+    .amount { font-size: 20px; font-weight: 700; margin: 24px 0 8px; }
+    .address { background: #f2f2f2; border-radius: 10px; padding: 14px 10px; word-break: break-all; font-family: monospace; font-size: 14px; margin: 12px 0; }
+    button, .dlbtn { background: #111; color: #fff; border: none; border-radius: 999px; padding: 12px 28px; font-size: 16px; cursor: pointer; text-decoration: none; display: inline-block; }
+    button:active, .dlbtn:active { opacity: 0.7; }
+    button:disabled { opacity: 0.4; cursor: default; }
+    .note { font-size: 14px; color: #666; margin-top: 20px; }
+    .steps { text-align: left; max-width: 420px; margin: 24px auto 0; }
+    .steps li { color: #333; margin-bottom: 10px; line-height: 1.5; }
+    a { color: #111; }
+    #ton-connect { display: flex; justify-content: center; margin: 16px 0; }
+    #status { font-size: 14px; color: #333; margin-top: 16px; min-height: 20px; }
+    #payBox, #verifyBox, #dlBox, #manualBox { display: none; }
+    .small { font-size: 13px; color: #777; }
+    hr { border: none; border-top: 1px solid #eee; margin: 28px 0; }
+  </style>
 </head>
 <body>
   <h1>AI Tools Prompt Pack</h1>
-  <p>30 prompts that get real answers — not generic ones. Grouped by use: learn faster, write clearly, build and code, think and decide, business and content, everyday AI use. Each prompt comes with a short note on when to use it, plus the formula behind every good prompt: context, task, format.</p>
+  <p>30 prompts that get real answers — not generic ones. Grouped by use: learn faster, write clearly, build and code, think and decide, business and content, everyday AI use. Each prompt comes with a clear goal, variables, tone, output and next-step framing so you get useful AI output instead of vague filler.</p>
   <div class="amount">$15 USDT (TON network)</div>
 
-  <!-- Step 1: connect -->
   <div id="ton-connect"></div>
   <p class="note" id="connectNote">Connect your TON wallet to pay. You need $15 USDT on TON plus a little TON for gas.</p>
-  <p class="note">No crypto wallet yet? You can still get the pack — send a DM via <a href="https://x.com/BuildWithElijah">X</a> or <a href="https://t.me/Elamorichie">Telegram</a> and I'll sort it with you.</p>
+  <p class="note">No crypto wallet yet? You can still get the pack — send a DM via <a href="https://x.com/BuildWithElijah">X</a> or <a href="https://t.me/Elamorichie">Telegram</a> and I'll sort it out manually.</p>
 
-  <!-- Step 2: pay -->
   <div id="payBox">
     <p class="note" id="walletNote"></p>
     <button id="payBtn">Pay $15 USDT</button>
     <p class="note small" id="memoNote"></p>
   </div>
 
-  <!-- Step 3: verify -->
   <div id="verifyBox">
     <p class="note">Payment sent. Give the network a moment, then tap verify.</p>
     <button id="verifyBtn">I paid — verify</button>
@@ -50,10 +47,9 @@
 
   <div id="status"></div>
 
-  <!-- Unlocked download -->
   <div id="dlBox">
     <p class="note"><strong>Payment confirmed. Thank you!</strong></p>
-    <a class="dlbtn" href="prompt-pack.pdf" download>Download the Prompt Pack (PDF)</a>
+    <a class="dlbtn" id="downloadLink" href="prompt-pack.pdf" download>Download the Prompt Pack (PDF)</a>
     <p class="note small">Save the file now. This unlock is remembered on this device.</p>
   </div>
 
@@ -75,18 +71,22 @@
   <script type="module">
     import { Address, beginCell, toNano } from 'https://esm.sh/@ton/core';
 
-    // Public constants only. No secrets on this page.
     const SELLER = 'UQCq0HDgTYlwOlLQWRQpTUpsJVWjDfWhhF2v_R6sSAN63pmy';
-    const USDT_MASTER = 'EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs'; // Tether USDt on TON
-    const PRICE_UNITS = 15000000; // $15 USDT, 6 decimals
-    const SITE = 'https://elamorichie-hue.github.io/richies-learnearn-app/';
+    const USDT_MASTER = 'EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs';
+    const PRICE_UNITS = 15000000;
+    const PDF_PATH = 'prompt-pack.pdf';
+    const SITE = (() => {
+      const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+      return isLocal ? window.location.origin + '/' : 'https://elamorichie-hue.github.io/richies-learnearn-app/';
+    })();
 
     const statusEl = document.getElementById('status');
     const setStatus = (t) => { statusEl.innerText = t; };
     const show = (id) => { document.getElementById(id).style.display = 'block'; };
     const hide = (id) => { document.getElementById(id).style.display = 'none'; };
+    const downloadLink = document.getElementById('downloadLink');
+    downloadLink.href = new URL(PDF_PATH, window.location.href).href;
 
-    // Remember a confirmed purchase on this device.
     if (localStorage.getItem('pp_paid') === '1') {
       hide('ton-connect'); hide('connectNote'); show('dlBox');
       setStatus('Welcome back — your download is unlocked on this device.');
@@ -97,7 +97,7 @@
       buttonRootId: 'ton-connect'
     });
 
-    let buyer = null;       // friendly address string
+    let buyer = null;
     let buyerJettonWallet = null;
     let memo = '';
     let payClickTime = 0;
@@ -105,9 +105,11 @@
     function raw(addr) {
       try { return Address.parse(addr).toRawString(); } catch (e) { return addr; }
     }
+
     function short(addr) {
       return addr.length > 14 ? addr.slice(0, 6) + '…' + addr.slice(-4) : addr;
     }
+
     function makeMemo() {
       const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
       let s = 'PP-';
@@ -133,22 +135,24 @@
       try {
         btn.disabled = true;
         setStatus('Checking your USDT balance…');
-        // Find the buyer's USDT jetton wallet and balance.
+
         const r = await fetch('https://tonapi.io/v2/accounts/' + buyer + '/jettons/' + USDT_MASTER);
         if (!r.ok) throw new Error('no-usdt');
+
         const j = await r.json();
         buyerJettonWallet = j.wallet_address && j.wallet_address.address;
         const bal = Number(j.balance || 0);
         if (!buyerJettonWallet) throw new Error('no-usdt');
+
         if (bal < PRICE_UNITS) {
           setStatus('Balance too low — you need $15 USDT in this wallet. You have ' + (bal / 1000000) + ' USDT.');
           btn.disabled = false;
           return;
         }
+
         memo = makeMemo();
         document.getElementById('memoNote').innerText = 'Your order code: ' + memo + ' (kept with your payment)';
-        // Jetton transfer cell: op 0x0f8a7ea5, query_id, amount, destination,
-        // response destination, no custom payload, forward TON, inline text comment.
+
         const cell = beginCell()
           .storeUint(0x0f8a7ea5, 32)
           .storeUint(0, 64)
@@ -161,8 +165,10 @@
           .storeUint(0, 32)
           .storeStringTail(memo)
           .endCell();
+
         payClickTime = Date.now();
         setStatus('Confirm the payment in your wallet…');
+
         await tonConnectUI.sendTransaction({
           validUntil: Math.floor(Date.now() / 1000) + 300,
           messages: [{
@@ -171,6 +177,7 @@
             payload: cell.toBoc().toString('base64')
           }]
         });
+
         hide('payBox'); show('verifyBox');
         setStatus('Payment sent. Wait a moment, then tap verify.');
       } catch (e) {
@@ -192,17 +199,20 @@
         const data = await r.json();
         const events = data.events || [];
         let found = false;
+
         for (const ev of events) {
           const ts = (ev.timestamp || 0) * 1000;
-          if (ts < payClickTime - 120000) continue; // only payments after you tapped Pay
+          if (ts < payClickTime - 120000) continue;
+
           for (const a of (ev.actions || [])) {
-            // tonapi shapes the action under its type name; accept reasonable variants.
             const jt = a.JettonTransfer || a.jetton_transfer || (a.type === 'JettonTransfer' ? a : null);
             if (!jt) continue;
+
             const jetton = jt.jetton || jt.jetton_address || (jt.jetton_master && jt.jetton_master.address);
             const sender = (jt.sender && jt.sender.address) || jt.sender;
             const recipient = (jt.recipient && jt.recipient.address) || jt.recipient;
             const amount = Number(jt.amount || 0);
+
             if (raw(String(jetton || '')) === raw(USDT_MASTER)
               && raw(String(recipient || '')) === raw(SELLER)
               && raw(String(sender || '')) === raw(buyer)
@@ -211,8 +221,10 @@
               break;
             }
           }
+
           if (found) break;
         }
+
         if (found) {
           localStorage.setItem('pp_paid', '1');
           hide('verifyBox'); hide('ton-connect'); hide('connectNote'); show('dlBox');
@@ -232,6 +244,7 @@
       box.style.display = box.style.display === 'block' ? 'none' : 'block';
     });
   </script>
+
   <script>
     function copyAddr() {
       var t = document.getElementById('addr').innerText;

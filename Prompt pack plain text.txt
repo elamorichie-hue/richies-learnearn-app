@@ -1,0 +1,153 @@
+AI Tools Prompt Pack
+Prompts that get real answers — not generic ones
+By Elijah
+
+HOW TO USE THIS PACK
+
+Pick a prompt. Replace everything in [brackets] with your own details. Add your context. Then read the answer and say what to fix — the second answer is usually the good one.
+
+The formula behind every good prompt:
+
+1. Context — what is this about, and who are you?
+2. Task — exactly what do you want it to do?
+3. Format — bullets, steps, under 100 words, a table — say how you want it back.
+
+One rule for all of them: the AI gives you a draft, not a decision. Check anything that matters — prices, addresses, code, facts — before you act on it.
+
+1. LEARN FASTER
+
+1. Explain it simple
+Explain [topic] to me like I'm 15 years old. Use one everyday example. No big words unless you explain them first.
+Use when: a topic sounds complicated and you want the plain version first.
+
+2. Find my gaps
+Ask me 5 questions about [topic], one at a time. After each answer, tell me what I got right, what I missed, and what to study next.
+Use when: you want to test yourself instead of just re-reading notes.
+
+3. Check my explanation
+I will explain [topic] in my own words. Listen, then point out exactly where my explanation is wrong or incomplete.
+Use when: you think you understand something and want proof.
+
+4. Study plan
+Make me a 7-day study plan for [topic]. I have [X] minutes a day. Each day: one small lesson and one short exercise.
+Use when: you want a plan you can actually follow, not a mountain of material.
+
+5. Summarize it
+Summarize [text or topic] in 5 bullet points, then give me the one idea I must remember.
+Use when: a long article, lesson, or video needs to become something you can keep.
+
+2. WRITE CLEARLY
+
+6. Rewrite for clarity
+Rewrite this so a 15-year-old understands it. Keep all the facts. Cut every unnecessary word: [text]
+Use when: your draft is correct but hard to read.
+
+7. Opening lines
+Give me 5 opening lines for a post about [topic]. Each one must make the reader want the next sentence. No clickbait, no exaggeration.
+Use when: you know what to say but not how to start.
+
+8. Outline first
+Before you write anything, give me an outline for [piece] with 3 main points and one example under each.
+Use when: you keep getting stuck halfway through writing.
+
+9. Change the tone
+Rewrite this in a warm, direct tone, like a friend explaining it. No corporate language: [text]
+Use when: your writing sounds stiff or robotic.
+
+10. Cut the fluff
+Cut this to half its length. Keep every important point. Show me what you removed and why: [text]
+Use when: your message is too long and people stop reading.
+
+3. BUILD AND CODE
+
+11. Explain the error
+Explain this error message in plain words, then give me the most likely cause and the fix, step by step: [error]
+Use when: an error message reads like a foreign language.
+
+12. Plan before code
+Before writing code, break [project] into small steps I can build one at a time. List each step and what "done" looks like.
+Use when: a project feels too big to start.
+
+13. Review my code
+Review this code like a senior developer. List bugs first, then improvements, then what is already good: [code]
+Use when: your code works but you want to know if it is good.
+
+14. Debug with me
+Ask me one question at a time to find why [code] is not working. Do not give the answer until we find the cause together.
+Use when: you want to understand the bug, not just copy a fix.
+
+15. Learn a tool by building
+Teach me [tool] by building one small real thing with it. Explain each step as we go. No theory dump first.
+Use when: tutorials bore you and you learn by doing.
+
+4. THINK AND DECIDE
+
+16. Decide between two options
+Help me decide between [A] and [B]. List the real tradeoffs, what each choice costs, and what I should check before choosing. Then tell me which one you would pick and why.
+Use when: you are stuck between two choices and going in circles.
+
+17. Pros and cons that matter
+List the pros and cons of [decision]. Mark which three matter most and why.
+Use when: a pros-and-cons list is too long to be useful.
+
+18. Break the goal down
+Break [goal] into the smallest first step I can do today, then the next 3 steps. No vague advice — concrete actions only.
+Use when: a goal feels big and you keep postponing it.
+
+19. Argue against my plan
+Argue against my plan: [plan]. Find the weakest part and tell me what could go wrong.
+Use when: you want the holes found before reality finds them.
+
+20. Find the real cause
+Ask me "why" 5 times about [problem], one question at a time, until we reach the real cause.
+Use when: you keep fixing symptoms and the problem keeps coming back.
+
+5. BUSINESS AND CONTENT
+
+21. Real pain points
+List 10 pains people who [struggle with X] actually feel, in their own words. No generic problems — specific, real frustrations.
+Use when: you want to sell something people actually need, not something you guess they need.
+
+22. Product description
+Write a product description for [product] that says what it does, who it is for, and why it is worth the price — in under 80 words.
+Use when: your product page says a lot and sells nothing.
+
+23. Content ideas that teach
+Give me 10 post ideas about [topic] that teach something real. Each idea: one line on what the reader learns.
+Use when: you want to post but have nothing worth saying.
+
+24. Three angles for one offer
+Give me 3 different angles to present [offer]: one about the result, one about the pain it removes, one about the time it saves.
+Use when: one offer, one post, and nobody is biting.
+
+25. Respectful reply
+Draft a short, respectful reply to [comment or message] that answers the point and adds one useful idea. No begging, no pitch.
+Use when: you want to be present in a conversation without selling in it.
+
+6. EVERYDAY AI USE
+
+26. Compare two things
+Compare [A] and [B] for [my use]. Tell me which fits better and what I give up with each.
+Use when: two tools, two plans, two products — and reviews all say "it depends."
+
+27. Plan the day
+Plan my [day or week] around [tasks]. Put the hardest task first, keep breaks, and leave room for things going wrong.
+Use when: your plan falls apart by noon every day.
+
+28. Explain a document
+Read this and tell me: what is it asking me to do, what is the deadline, and what happens if I ignore it: [document]
+Use when: a long message, email, or form hides the one thing you must do.
+
+29. Advice into a checklist
+Turn this advice into a checklist I can follow today: [advice]
+Use when: good advice stays advice because nobody turned it into steps.
+
+30. Questions to start with
+I want to ask an AI about [topic] but I don't know what to ask. Give me the 5 best questions to start with.
+Use when: you are new to a topic and don't know where to begin.
+
+THE ONE RULE, AGAIN
+
+Prompts do not make you smart. They make the tool useful. The thinking is still yours: check the answer, fix what is wrong, and keep the part that is right. That is how you learn — one piece at a time.
+
+More from me: linktr.ee/ElamoRichie

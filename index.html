@@ -34,7 +34,7 @@
   .challenge{border-color:#3d3413;background:linear-gradient(135deg,#241d08,var(--card))}
   .challenge h3{font-size:15px;margin-bottom:6px}
   .challenge p{font-size:14px;line-height:1.55;color:#e8e2cd}
-  .btn{display:block;width:100%;text-align:center;background:linear-gradient(90deg,var(--teal),var(--green));color:#04160c;font-weight:800;border:none;border-radius:13px;padding:13px;font-size:15px;cursor:pointer}
+  .btn{display:block;width:100%;text-align:center;background:linear-gradient(90deg,var(--teal),var(--green));color:#04160c;font-weight:800;border:none;border-radius:13px;padding:13px;font-size:15px;cursor:pointer;text-decoration:none}
   .btn.gold{background:linear-gradient(90deg,#f7b733,#f59e0b);color:#221300}
   .btn.ghost{background:var(--card2);color:var(--text);border:1px solid var(--line)}
   .btn:disabled{opacity:.55}
@@ -123,7 +123,7 @@
   <section class="view" id="view-premium">
     <div class="premium-hero">
       <div style="font-size:30px">⭐</div>
-      <div class="price" id="priceTag">$3</div>
+      <div class="price" id="priceTag">$5</div>
       <div style="color:var(--muted);font-size:13.5px">one-time · no subscription · yours to keep</div>
       <ul>
         <li>✅ All 40 lessons, every track</li>
@@ -142,12 +142,12 @@
         <button class="btn" onclick="openWalletLink()">📲 Open my wallet to pay</button>
         <button class="btn" style="margin-top:8px" onclick="verifyPayment(this)">✅ I've sent it — verify</button>
         <p id="payStatus"></p>
-        <p class="small">Button not opening your wallet? Open Walt / Wallet → Transfer → paste the address, amount and memo exactly. A payment without the memo can't be matched automatically — and that breaks the verification step.</p>
+        <p class="small">Button not opening your wallet? Open Walt / Wallet → Transfer → paste the address, amount and memo exactly. A payment without the memo can't be matched automatically.</p>
       </div>
     </div>
     <div class="card" id="codeCard">
       <h3 style="margin-bottom:6px">🏦 Or pay by bank transfer / code</h3>
-      <p style="font-size:14.5px;line-height:1.65">Free covers the first 3 lessons of every track. To unlock everything: pay in the bot chat and redeem your code there — your premium follows your Telegram identity.</p>
+      <p style="font-size:14.5px;line-height:1.65">Free covers the first 3 lessons of every track. To unlock everything: pay in the bot chat and redeem your code there — your premium follows you across devices.</p>
       <a class="btn gold" id="botLink" href="#" target="_blank" style="text-decoration:none">Open the bot to unlock →</a>
       <p class="small">Already premium in the bot? Your unlocked lessons live there; app sync arrives with the next upgrade.</p>
     </div>
@@ -166,7 +166,7 @@
 </div></nav>
 
 <script>
-const DATA = {"free": 3, "price": "$3", "bot": "https://t.me/RichiesLearnEarn_bot", "tracks": [{"key": "python", "title": "🐍 Python", "tagline": "Code from your phone, one small step at a time.", "lessons": [{"title": "What is Python?", "body": "Python is a beginner-friendly language. It reads like English, which makes it easier to learn and use for automation, data work, and AI scripting.", "task": "Write 3 mini tasks you could automate with Python in your daily life.", "quiz": {"q": "Why is Python popular for beginners?", "options": ["It runs only on Apple devices", "It reads like English and is beginner-friendly", "It needs a paid subscription", "It only works in browsers"], "answer": 1}}, {"title": "Variables and data", "body": "Variables store data. A variable can hold a name, a number, or a list. Example: name = 'Richie'; score = 7.", "task": "Create 3 variables representing a product, a price, and a buyer name.", "quiz": {"q": "Which line stores a number?", "options": ["name = 'Alice'", "price = 12", "city = 'Lagos'", "list = []"], "answer": 1}}, {"title": "Lists and loops", "body": "Lists store items in order. A loop lets you repeat actions. Example: for item in tasks: print(item)", "task": "List 5 things you do every week and loop through them in a script idea.", "quiz": {"q": "What does a loop do?", "options": ["Stores one value only", "Prints one thing forever", "Repeats an action for each item", "Deletes a list"], "answer": 2}}]}, {"key": "ai", "title": "🤖 AI Tools", "tagline": "Use AI well, not blindly.", "lessons": [{"title": "Prompting basics", "body": "Good AI prompts give clear context, task, and desired output. Keep the goal specific and the tone realistic.", "task": "Write one prompt to get a 3-step social media content plan for a small brand.", "quiz": {"q": "What makes a good prompt?", "options": ["Random words and emojis", "Clear task, context, and output format", "Asking for the largest answer possible", "No instructions"], "answer": 1}}, {"title": "Checking AI output", "body": "AI is useful but can be wrong. Always verify numbers, names, claims and instructions before publishing or acting on them.", "task": "Find one AI result you would verify before trusting it.", "quiz": {"q": "What should you do before trusting AI output?", "options": ["Copy it instantly", "Check facts and context", "Ignore the task", "Delete the prompt"], "answer": 1}}, {"title": "Workflows", "body": "AI is strongest when it supports a workflow: plan first, draft second, fact-check third, then publish.", "task": "Design a 3-step workflow for making content with an AI assistant.", "quiz": {"q": "What is the best workflow?", "options": ["Publish first, ask questions later", "Plan, draft, verify", "Never use AI", "Only use AI for one-off jokes"], "answer": 1}}]}], "challenges": {"python": ["Write one Python script idea that saves you 10 minutes a day.", "Make a list of 5 tasks you need to automate this week.", "Open a Python file and write 3 variable examples."], "ai": ["Write one AI prompt for a business idea you care about.", "Review one AI answer for a factual error.", "Turn one repetitive task into an AI workflow."]}, "earn_intro": "The honest path is not magic. It is learning a valuable skill, packaging it well, and selling a useful outcome. That can mean content creation, design, automation, social media support, research, admin help, or building small tools. The fake path tries to promise instant income with little work. The real path is slower, but it compounds.", "weekly": ["This week, pick one skill you can improve in 30 minutes a day and write a small practice plan.", "This week, create one simple asset: a small product, a landing page idea, or a portfolio snippet.", "This week, reach out to one person or small business and offer one practical win you can help with."], "template": ""};
+const DATA = {"free": 3, "price": "$5", "bot": "https://t.me/RichiesLearnEarn_bot", "tracks": [{"key": "python", "title": "🐍 Python", "tagline": "Code from your phone, one small step at a time", "lessons": [{"title": "Lesson 1", "body": "Welcome to Python on your phone.", "task": "Write a tiny script to print your name.", "quiz": {"q": "What does print() do?", "options": ["Shows text", "Saves a file", "Deletes data"], "answer": 0}}, {"title": "Lesson 2", "body": "Variables hold values.", "task": "Store your city in a variable.", "quiz": {"q": "Which is a valid variable name?", "options": ["2name", "first_name", "first-name"], "answer": 1}}]}, {"key": "ai", "title": "🤖 AI", "tagline": "Use AI like a tool, not magic.", "lessons": [{"title": "Lesson 1", "body": "Prompting starts with a clear goal.", "task": "Ask for a 3-step plan.", "quiz": {"q": "Why is a clear prompt helpful?", "options": ["It speeds up the result", "It deletes the model", "It turns off AI"], "answer": 0}}]}], "earn_intro": "This is the honest map: build skills, create small wins, and get paid for useful work.", "weekly": ["Ask three people what pain point they have and write one simple offer.", "Make a one-page portfolio of your best work."]};
 const tg = window.Telegram && window.Telegram.WebApp;
 if (tg) { tg.ready(); tg.expand(); }
 
@@ -199,9 +199,9 @@ function go(view){
 function renderHome(){
   document.getElementById('streakChip').textContent = '🔥 ' + (state.streak||0) + ' day' + (state.streak===1?'':'s');
   const dayIdx = Math.floor(Date.now()/86400000);
-  const keys = Object.keys(DATA.challenges);
-  const ck = keys[dayIdx % keys.length];
-  const chal = DATA.challenges[ck][dayIdx % DATA.challenges[ck].length];
+  const keys = Object.keys(DATA.challenges || {});
+  const ck = keys.length ? keys[dayIdx % keys.length] : 'python';
+  const chal = (DATA.challenges && DATA.challenges[ck]) ? DATA.challenges[ck][dayIdx % DATA.challenges[ck].length] : 'Finish your next lesson.';
   const doneToday = state.chalDay === todayStr();
   document.getElementById('challengeCard').innerHTML =
     '<h3>🔥 Daily Challenge — ' + trackTitle(ck) + '</h3><p>' + chal + '</p>' +
@@ -283,7 +283,7 @@ function nextLesson(){
 }
 
 const PAY_ADDRESS = "UQCq0HDgTYlwOlLQWRQpTUpsJVWjDfWhhF2v_R6sSAN63pmy";
-const USD_PRICE = 3;
+const USD_PRICE = 5;
 let payNano = null, payMemoStr = '';
 function memoCode(){
   if (!state.uid){ state.uid = 'U' + Math.random().toString(36).slice(2,8).toUpperCase(); save(); }
@@ -317,7 +317,7 @@ async function openPaySheet(){
     const amt = Math.ceil((USD_PRICE / price) * 100) / 100;
     payNano = Math.round(amt * 1e9);
     const el = document.getElementById('payAmount');
-    el.textContent = amt.toFixed(2) + ' GRAM (≈$3)';
+    el.textContent = amt.toFixed(2) + ' GRAM (≈$5)';
     el.dataset.v = amt.toFixed(2);
     st.textContent = 'Rate: 1 GRAM ≈ $' + price.toFixed(2) + '. Send exactly this amount with your memo.';
   } catch(e) {
@@ -352,7 +352,7 @@ async function verifyPayment(btn){
     st.textContent = '🔎 Not seen yet — checking again… (' + (k+1) + '/12)';
     await new Promise(res => setTimeout(res, 10000));
   }
-  st.textContent = '⏳ Not confirmed yet. If you sent it, wait a minute and tap verify again — or send your memo (' + payMemoStr + ') in the bot chat and it will be confirmed by hand. A payment without the memo cannot be matched automatically.';
+  st.textContent = '⏳ Not confirmed yet. If you sent it, wait a minute and tap verify again — or send your memo (' + payMemoStr + ') in the bot chat and it will be confirmed by hand. A payment without the memo can’t be matched automatically.';
   btn.disabled = false;
 }
 
